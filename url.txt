@@ -1,2 +1,2 @@
 Link Dashboard Peminjaman Sepeda
-https://dashboard-sepeda-86cqndvetzv7uffkvyoc8k.streamlit.app/
+https://dashboard-capitalbikeshare-a319ybf503.streamlit.app/
