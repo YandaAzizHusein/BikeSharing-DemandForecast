@@ -41,7 +41,7 @@ df_weather.plot(kind="bar", colormap="Set2", ax=ax, rot=0, grid=True)
 ax.set_title("Rata-rata Penyewaan Sepeda Berdasarkan Kondisi Cuaca")
 ax.set_xlabel("Kategori Cuaca")
 ax.set_ylabel("Rata-rata Penyewaan Sepeda")
-ax.legend(["Total", "Casual", "Registered"])
+ax.legend(["Total", "Registered", "Casual"])
 ax.grid(axis="y", linestyle="--", alpha=0.7)
 st.pyplot(fig)
 
@@ -58,7 +58,7 @@ df_filtered_season.plot(kind="bar", colormap="Set2", ax=ax, rot=0, grid=True)
 ax.set_title("Rata-rata Penyewaan Sepeda Berdasarkan Musim")
 ax.set_xlabel("Musim")
 ax.set_ylabel("Rata-rata Penyewaan Sepeda")
-ax.legend(["Total", "Casual", "Registered"])
+ax.legend(["Total", "Registered", "Casual"])
 st.pyplot(fig)
 
 # Analisis Penyewaan Sepeda Berdasarkan Hari dalam Seminggu
@@ -75,7 +75,7 @@ df_selected_days.plot(kind="bar", colormap="Set2", rot=0, grid=True, ax=ax)
 ax.set_title("Rata-rata Penyewaan Sepeda Berdasarkan Hari dalam Seminggu")
 ax.set_xlabel("Hari")
 ax.set_ylabel("Rata-rata Penyewaan Sepeda")
-ax.legend(["Total", "Casual", "Registered"])
+ax.legend(["Total", "Registered", "Casual"])
 st.pyplot(fig)
 
 # Analisis Penyewaan Sepeda Berdasarkan Jam
@@ -87,7 +87,7 @@ df_hour.plot(kind="bar", colormap="Set2", rot=0, grid=True, ax=ax)
 ax.set_title("Rata-rata Penyewaan Sepeda Berdasarkan Jam")
 ax.set_xlabel("Jam")
 ax.set_ylabel("Rata-rata Penyewaan Sepeda")
-ax.legend(["Total", "Casual", "Registered"])
+ax.legend(["Total", "Registered", "Casual"])
 st.pyplot(fig)
 
 # Analisis Penyewaan Sepeda Berdasarkan Hari Kerja vs Libur
