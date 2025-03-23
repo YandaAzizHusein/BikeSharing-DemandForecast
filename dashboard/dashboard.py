@@ -9,12 +9,12 @@ st.title("Dashboard Peminjaman Sepeda")
 
 # Load Data
 #st.write("## 📅 Data Per Hari")
-file_path_day = r"dashboard/day.csv"
+file_path_day = r"data/day.csv"
 df_OriginalDay = pd.read_csv(file_path_day)
 #st.dataframe(df_OriginalDay)
 
 #st.write("## ⏳ Data Per Jam")
-file_path_hour = r"dashboard/hour.csv"
+file_path_hour = r"data/hour.csv"
 df_OriginalHour = pd.read_csv(file_path_hour)
 #st.dataframe(df_OriginalHour)
 
