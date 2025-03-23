@@ -23,11 +23,11 @@ df_OriginalHour = pd.read_csv(file_path_hour)
 
 # Konversi tanggal ke format numerik untuk analisis tren
 df_OriginalHour['dteday'] = pd.to_datetime(df_OriginalHour['dteday'])
-df_OriginalHour['dteday_float'] = df_OriginalHour['dteday'].apply(lambda x: x.year + (x.day_of_year / (366 if x.is_leap_year else 365)))
+df_OriginalHour['dteday_float'] = df_OriginalHour['dteday'].dt.year + (df_OriginalHour['dteday'].dt.dayofyear / 365)
 df_numHour = df_OriginalHour.drop(columns=['dteday'])
 
 df_OriginalDay['dteday'] = pd.to_datetime(df_OriginalDay['dteday'])
-df_OriginalDay['dteday_float'] = df_OriginalDay['dteday'].apply(lambda x: x.year + (x.day_of_year / (366 if x.is_leap_year else 365)))
+df_OriginalDay['dteday_float'] = df_OriginalDay['dteday'].dt.year + (df_OriginalDay['dteday'].dt.dayofyear / 365)
 df_numDay = df_OriginalDay.drop(columns=['dteday'])
 
 # Analisis Penyewaan Sepeda Berdasarkan Kondisi Cuaca
