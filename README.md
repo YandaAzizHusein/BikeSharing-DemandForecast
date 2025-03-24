@@ -50,16 +50,23 @@ Setiap file memiliki variabel utama berikut:
 - `registered` → Jumlah penyewa yang merupakan pelanggan tetap.
 - `cnt` → Total jumlah sepeda yang disewa (casual + registered).
 
-## 3. Metodologi Analisis
-Analisis dilakukan untuk memahami faktor-faktor yang mempengaruhi jumlah penyewaan sepeda, termasuk tren musiman, perbedaan antara pelanggan tetap dan tidak tetap, serta dampak cuaca terhadap jumlah peminjaman.
-
-Langkah-langkah analisis meliputi:
-1. **Eksplorasi Data**: Memeriksa distribusi variabel, missing values, dan outlier.
-2. **Visualisasi Data**: Menggunakan heatmap korelasi, plot tren harian, dan histogram untuk memahami pola peminjaman.
-3. **Transformasi Data**:
-   - Mengubah `dteday` menjadi representasi numerik (contoh: `2011.5` untuk pertengahan tahun 2011).
-   - Menyesuaikan variabel kategorikal untuk analisis lebih lanjut.
-4. **Insight & Kesimpulan**: Mengidentifikasi pola dan hubungan antara variabel dalam dataset.
+## 3. Setup & Menjalankan Dashboard
+a. Buat & Aktifkan Environment (Anaconda)
+```
+conda create --name bike-ds python=3.9
+conda activate bike-ds
+```
+b. Install Dependencies
+```
+pip install -r requirements.txt
+```
+c. Menjalankan Dashboard
+```
+cd dashboard
+streamlit run dashboard.py
+```
+d. Link Menuju dashbord pada cloud
+[https://dashboard-capitalbikeshare-a319ybf503.streamlit.app/]
 
 ## 4. Struktur Direktori Proyek
 Struktur direktori dalam proyek ini adalah sebagai berikut:
